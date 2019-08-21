@@ -1,0 +1,265 @@
+.form-control{
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out !important; 
+}
+
+.body-content{
+    padding: 50px;
+}
+
+#membership {
+    max-width: 1440px;
+    max-height: 900px;
+    height: 100%;
+    margin: 0 auto auto auto;
+    box-shadow: 1px 1px 5px #777;
+    user-select: none;
+    overflow: hidden;
+    display: flex;
+    background-color: #EEE;
+    border-radius: 12px;
+}
+
+#membership .membership-forms{
+    height: 100%;
+    transition: all 0.5s linear;
+
+}
+
+#membership >.membership-col-1{
+    flex: 10%
+}
+
+#membership >.membership-col-1{
+    flex: 90%
+}
+
+#membership >.membership-col-1,
+#membership >.membership-col-2 {
+    padding: 0px;
+}
+
+#membership .membership-login,
+#membership .membership-SignUp{
+    position: relative;
+    max-height: 900px;
+    height: 100%;
+    transition: all 0.5s linear;
+}
+
+
+#membership .form-scroll-down,
+#membership .form-scroll-up{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #777;
+    box-shadow: 1px 1px 5px #ddd;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+#membership .form-scroll-down i,
+#membership .form-scroll-up i {
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+}
+#membership .form-scroll-down:hover,
+#membership .form-scroll-up:hover{
+    cursor: pointer;
+}
+
+
+
+
+
+#membership .membership-login input[type="email"],
+#membership .membership-login input[type="password"],
+#membership .membership-login input[type="submit"],
+#membership .membership-SignUp input[type="text"],
+#membership .membership-SignUp input[type="password"],
+#membership .membership-SignUp input[type="email"],
+#membership .membership-SignUp input[type="submit"] {
+    border-radius: 60px;
+}
+
+
+#membership  input[type="submit"]{
+    padding: .375rem 2rem;
+    background-color: #777 ;
+}
+
+
+#membership .membership-bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    max-height: 900px;
+    height: 100%;
+    filter: brightness(1.7);
+}
+
+
+#membership .membership-login,
+#membership .membership-SignUp  {
+    padding: 25px;
+}
+
+#membership h2.formHeading {
+    padding: 20px 0 35px 0;
+    margin: 0;
+}
+
+
+#membership .col-md-4 .membership-login,
+#membership .col-md-4 .membership-SignUp {
+    height: 100%;
+}
+
+
+
+#membership #loginRememberMe span {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-right: 10px; 
+}
+
+
+#membership #SignUp-Gender .toggleCheckbox__handle::before{
+    content: "Female";
+}
+
+#membership #SignUp-Gender .toggleCheckbox__handle::after {
+    left: 30px;
+    content: "Male";
+}
+
+
+#membership #SignUp-Gender .toggleCheckbox__wrap {
+    width : 75px;
+}
+
+
+/*Toggle Checkbox*/
+.toggleCheckbox {
+    display: block;
+    overflow: hidden;
+}
+.toggleCheckbox .toggleCheckbox__wrap {
+    display: inline-block;
+    vertical-align: middle;
+    /* border: 1px solid #BBB; */
+    position: relative;
+    border-radius: 20px;
+    color: #FFF;
+    overflow: hidden;
+    box-shadow: 0 1px 0 #CCC, 1px 3px 4px rgba(0, 0, 0, 0.5) inset;
+    white-space: nowrap;
+    font-size: 11px;
+    cursor: pointer;
+    /* -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0); */
+}
+.toggleCheckbox .toggleCheckbox__handle {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    left: 0;
+    background: #F1F1F1;
+    border-radius: 20px;
+    font-weight: normal;
+    border: 1px solid #BBB;
+
+}
+.toggleCheckbox .toggleCheckbox__handle::before,
+.toggleCheckbox .toggleCheckbox__handle::after {
+    position: absolute;
+    opacity: .7;
+    transition: .1s;
+}
+.toggleCheckbox .toggleCheckbox__handle::after {
+    left: 0;
+    color: #777;
+}
+.toggleCheckbox .toggleCheckbox__handle::before {
+    right: 0;
+}
+.toggleCheckbox input {
+    position: absolute;
+    z-index: -1;
+    left: -999em;
+}
+.toggleCheckbox input:focus~b {
+    background: white;
+}
+.toggleCheckbox input:checked~b {
+    left: 100%;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+.toggleCheckbox .toggleCheckbox:hover .toggleCheckbox__handle {
+    background: #FFF;
+}
+.toggleCheckbox .toggleCheckbox:hover .toggleCheckbox__handle::before,
+.toggleCheckbox .toggleCheckbox:hover .toggleCheckbox__handle::after {
+    opacity: 1;
+}
+.toggleCheckbox .toggleCheckbox__wrap {
+    width: 65px;
+    height: 25px;
+    line-height: 22px;
+    text-align: left;
+}
+.toggleCheckbox .toggleCheckbox__handle {
+    height: 25px;
+    line-height: 25px;
+    width: 25px;
+    border-radius: 25px;
+    box-shadow: 
+    0 0 3px #888, -45px 0 0 32.5px #777, 
+    45px 0 0 32.5px rgba(240, 240, 240, 0.75);
+    transition: 0.2s;
+}
+.toggleCheckbox .toggleCheckbox__handle::before {
+    right: 30px;
+    content: "ON";
+}
+.toggleCheckbox .toggleCheckbox__handle::after {
+    left: 30px;
+    content: "OFF";
+}
+
+/* Date Picker Custom Styling */
+
+.react-date-picker__wrapper {
+    background-color: #fff;
+    padding: .175rem .75rem;
+    border-radius: 60px;
+    border: 1px solid #ced4da !important;
+}
+
+.react-date-picker.react-date-picker--closed.react-date-picker--enabled {
+    display: block;
+}
+
+.react-calendar {
+    border-radius: 12px;
+    border: 1px solid #ced4da !important;
+}
+
+.react-date-picker__calendar.react-date-picker__calendar--open {
+    position: absolute;
+    top: 2.25rem !important;
+}
+
+
+.react-date-picker.react-date-picker--open.react-date-picker--enabled {
+    display: block;
+}
