@@ -1,0 +1,88 @@
+
+.studentList{
+    max-width: 1440px;
+    margin: 50px auto auto auto;
+    padding: 25px;
+
+}
+
+.studentList .student-list-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.studentList .student-list-header input[type="search"]{
+    max-width: 400px;
+    border-radius: 60px; 
+    font-style: italic;
+}
+
+.studentList table{
+    box-shadow: 1px 1px 5px #ddd;
+    margin: 50px 0; 
+    border-radius: 12px;   
+}
+
+.studentList table thead tr{
+    border-radius: 12px; 
+}
+
+.studentList table thead th:first-child{
+    border-radius: 12px 0 0 0;   
+}
+.studentList table thead th:last-child{
+    border-radius: 0 12px 0 0;
+}
+
+.studentList table thead th{
+    background-color: #333;
+    color: #fff;
+    border:none;
+}
+
+.studentList table thead th:nth-child(1),
+.studentList table tbody th{
+    text-align: center;
+}
+
+ul.pagination{
+    justify-content: center;
+}
+
+ul.pagination .page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: #777;
+    border-color: #777;
+}
+
+ul.pagination .page-item{
+    margin:0 5px
+}
+
+ul.pagination .page-link{
+    border-radius: 50% !important;
+    color: #777;
+}
+
+
+@media screen and (max-width:702px){
+    .studentList{
+        margin: 0;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .studentList .student-list-header{
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .studentList .student-list-header input[type="search"]{
+        max-width: 100%;
+        width: 100%;
+        margin-top:25px;
+    }
+
+}
